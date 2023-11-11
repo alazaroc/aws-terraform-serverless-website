@@ -2,14 +2,20 @@ provider "aws" {
   region = "us-east-1"
 }
 
+# Special provider for creating ACM certs as they must be provisioned in us-east-1 to work with 
+provider "aws" {
+  region = "us-east-1"
+  alias  = "use_default_region"
+}
+
 resource "aws_s3_bucket" "website_bucket" {
   bucket = "my-unique-bucket-name-12y398y13489148h"
 }
 
 resource "aws_s3_account_public_access_block" "website_bucket" {
-  block_public_acls   = true
-  block_public_policy = true
-  ignore_public_acls = true
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
   restrict_public_buckets = true
 }
 

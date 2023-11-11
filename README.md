@@ -1,8 +1,6 @@
 # aws-terraform-serverless-website
 
-This code has been created to write the following article:
-
-The article tries to explain how Terraform works: <https://www.playingaws.com/posts/how-to-deploy-serverless-website-with-terraform/>
+This code has been created to explain how Terraform works in the following article of my blog <https://www.playingaws.com/posts/how-to-deploy-serverless-website-with-terraform/>
 
 ![how-terraform-works](how-terraform-works.png)
 

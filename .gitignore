@@ -1,6 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
 .terraform.*
+**/lambda-edge.zip
 
 # .tfstate files
 *.tfstate
